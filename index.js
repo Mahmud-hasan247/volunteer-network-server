@@ -105,4 +105,4 @@ app.get('/', (req, res) => {
     res.send('Welcome to volunteer network!')
 })
 
-app.listen(port);
+app.listen(process.env.PORT || port);
