@@ -19,7 +19,7 @@ admin.initializeApp({
     databaseURL: process.env.DB_URL
 });
 
-const port = process.env.DB_PORT;
+const port = 4000;
 
 MongoClient.connect(uri, { useUnifiedTopology: true }, function (err, client) {
     const services = client.db(process.env.DB_NAME).collection("services");
