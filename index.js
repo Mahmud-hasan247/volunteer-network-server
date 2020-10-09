@@ -12,7 +12,7 @@ app.use(cors());
 
 var uri = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-shard-00-00.yetxo.mongodb.net:27017,cluster0-shard-00-01.yetxo.mongodb.net:27017,cluster0-shard-00-02.yetxo.mongodb.net:27017/${process.env.DB_NAME}?ssl=true&replicaSet=atlas-8altey-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
-const serviceAccount = require("./volunteer-network-a05f8-firebase-adminsdk-gn26t-a9ea35aef0.json");
+const serviceAccount = require("./configs/volunteer-network-a05f8-firebase-adminsdk-gn26t-a9ea35aef0.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
