@@ -101,8 +101,8 @@ MongoClient.connect(uri, { useUnifiedTopology: true }, function (err, client) {
 
 });
 
-// app.get('/', (req, res) => {
-//     res.send('Welcome to volunteer network!')
-// })
+app.get('/', (req, res) => {
+    res.send('Welcome to volunteer network!')
+})
 
 app.listen(process.env.PORT || port);
